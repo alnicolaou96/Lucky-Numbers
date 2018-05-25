@@ -14,10 +14,14 @@ namespace ProjectTwo_AlexandrosNicolaou
             do
             {
                 //Starting and ending numbers
-                Console.WriteLine("input your starting number");
-                int min = int.Parse(Console.ReadLine());
-                Console.WriteLine("input your ending number ");
-                int max = int.Parse(Console.ReadLine());
+                int min, max;
+                do
+                {
+                    Console.WriteLine("input your starting number");
+                    min = int.Parse(Console.ReadLine());
+                    Console.WriteLine("input your ending number (at least 6 numbers greater than the min)");
+                    max = int.Parse(Console.ReadLine());
+                } while ((max - min) < 5);
 
                 //jackpot
                 double jackpot = 23.01;
@@ -28,12 +32,18 @@ namespace ProjectTwo_AlexandrosNicolaou
                 int[] luckyNumber = new int[6];
                 for (int i = 0; i < luckyNumber.Length; i++)
                 {
-                    luckyNumber[i] = int.Parse(Console.ReadLine());
-                    while (luckyNumber[i] < min || luckyNumber[i] > max)
+                    int pick = int.Parse(Console.ReadLine());
+                    while (pick < min || pick > max)
                     {
                         Console.WriteLine("number is invalid \ninput a number between {0} and {1}", min, max);
-                        luckyNumber[i] = int.Parse(Console.ReadLine());
+                        pick = int.Parse(Console.ReadLine());
                     }
+                    while (luckyNumber.Contains(pick))
+                    {
+                        Console.WriteLine("do not enter the same number twice");
+                        pick = int.Parse(Console.ReadLine());
+                    }
+                    luckyNumber[i] = pick;
                 }
 
                 //random lucky numbers array
@@ -52,7 +62,7 @@ namespace ProjectTwo_AlexandrosNicolaou
                 int correctGuess = 0;
                 for (int i = 0; i < luckyRandom.Length; i++)
                 {
-                    if (luckyRandom[i] == luckyNumber[i])
+                     if (luckyRandom[i] == luckyNumber[i])
                     {
                         correctGuess = correctGuess + 1;
                     }
