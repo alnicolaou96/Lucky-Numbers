@@ -1,0 +1,7 @@
+C:\Users\WeCanCodeIT\source\repos\ProjectTwo_AlexandrosNicolaou\ProjectTwo_AlexandrosNicolaou\bin\Debug\ProjectTwo_AlexandrosNicolaou.exe.config
+C:\Users\WeCanCodeIT\source\repos\ProjectTwo_AlexandrosNicolaou\ProjectTwo_AlexandrosNicolaou\bin\Debug\ProjectTwo_AlexandrosNicolaou.exe
+C:\Users\WeCanCodeIT\source\repos\ProjectTwo_AlexandrosNicolaou\ProjectTwo_AlexandrosNicolaou\bin\Debug\ProjectTwo_AlexandrosNicolaou.pdb
+C:\Users\WeCanCodeIT\source\repos\ProjectTwo_AlexandrosNicolaou\ProjectTwo_AlexandrosNicolaou\obj\Debug\ProjectTwo_AlexandrosNicolaou.csprojAssemblyReference.cache
+C:\Users\WeCanCodeIT\source\repos\ProjectTwo_AlexandrosNicolaou\ProjectTwo_AlexandrosNicolaou\obj\Debug\ProjectTwo_AlexandrosNicolaou.csproj.CoreCompileInputs.cache
+C:\Users\WeCanCodeIT\source\repos\ProjectTwo_AlexandrosNicolaou\ProjectTwo_AlexandrosNicolaou\obj\Debug\ProjectTwo_AlexandrosNicolaou.exe
+C:\Users\WeCanCodeIT\source\repos\ProjectTwo_AlexandrosNicolaou\ProjectTwo_AlexandrosNicolaou\obj\Debug\ProjectTwo_AlexandrosNicolaou.pdb
