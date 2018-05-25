@@ -23,9 +23,13 @@ namespace ProjectTwo_AlexandrosNicolaou
                     max = int.Parse(Console.ReadLine());
                 } while ((max - min) < 5);
 
+
+
                 //jackpot
                 double jackpot = 23.01;
                 Console.WriteLine("The jackpot is $" + jackpot);
+
+
 
                 //guess 6 number array
                 Console.WriteLine("Guess six lucky numbers");
@@ -46,6 +50,8 @@ namespace ProjectTwo_AlexandrosNicolaou
                     luckyNumber[i] = pick;
                 }
 
+
+
                 //random lucky numbers array
                 int[] luckyRandom = new int[6];
                 Random r = new Random();
@@ -58,6 +64,8 @@ namespace ProjectTwo_AlexandrosNicolaou
                     Console.WriteLine("Lucky number: " + luckyRandom[i]);
                 }
 
+
+
                 //correct guesses
                 int correctGuess = 0;
                 for (int i = 0; i < luckyRandom.Length; i++)
@@ -68,6 +76,8 @@ namespace ProjectTwo_AlexandrosNicolaou
                     }
                 }
                 Console.WriteLine("you guessed {0} correctly!", correctGuess);
+
+
 
                 //how much did the user win
                 double prize;
@@ -102,13 +112,13 @@ namespace ProjectTwo_AlexandrosNicolaou
                         break;
                 }
 
+
+
                 //play again?
                 Console.WriteLine("do you wish to play again?");
                 playAgain = Console.ReadLine();
             } while ( playAgain != "no");
             Console.WriteLine("thanks for playing!");
-                    
-                    
         }
     }
 }
