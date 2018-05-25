@@ -29,6 +29,33 @@ namespace ProjectTwo_AlexandrosNicolaou
                     luckyNumber[i] = int.Parse(Console.ReadLine());
                 }            
             }
+
+            //random lucky numbers array
+            int[] luckyRandom = new int[6];
+            Random r = new Random();
+            for(int i=0; i<luckyRandom.Length;i++)
+            {
+                luckyRandom[i] = r.Next(min, max);
+            }
+            for(int i=0; i<luckyRandom.Length;i++)
+            {
+                Console.WriteLine("Lucky number: "+luckyRandom[i]);
+            }
+
+            //jackpot
+            double jackpot = 23.01;
+            Console.WriteLine("The jackpot is $"+jackpot);
+
+            //correct guesses
+            int correctGuess = 0;
+            for (int i=0;i<luckyRandom.Length;i++)
+            {
+                if (luckyRandom[i]==luckyNumber[i])
+                {
+                    correctGuess = correctGuess + 1;
+                }
+            }
+            Console.WriteLine("you guessed {0} correctly!",correctGuess);
         }
     }
 }
