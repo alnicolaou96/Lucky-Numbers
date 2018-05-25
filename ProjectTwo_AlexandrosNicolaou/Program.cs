@@ -58,9 +58,6 @@ namespace ProjectTwo_AlexandrosNicolaou
                 for (int i = 0; i < luckyRandom.Length; i++)
                 {
                     luckyRandom[i] = r.Next(min, max);
-                }
-                for (int i = 0; i < luckyRandom.Length; i++)
-                {
                     Console.WriteLine("Lucky number: " + luckyRandom[i]);
                 }
 
